@@ -16,7 +16,7 @@ let app = [
 
 function Project() {
   return (
-    <div className="procont">
+    <div className="procont" id="pro">
         <p className="protitle">Projects by <span>own</span> </p>
         <p className="prosub" id="asweb">As Website</p>
         <div className="proincont"> 
