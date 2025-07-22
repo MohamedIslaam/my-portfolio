@@ -1,0 +1,8 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    background: linear-gradient(to bottom right,#040404,#343434);
+}

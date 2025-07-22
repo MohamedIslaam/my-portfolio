@@ -1,0 +1,53 @@
+.educont {
+    background: linear-gradient(to bottom right, #040404, #343434);
+    padding: 50px 10%;
+    
+    & .edutitle {
+        color: #70FE00;
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+}
+
+.educont .eduinnercont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.educont .eduinnercont .eduitm {
+    display: flex;
+    background-color: #1F2937;
+    color: white;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: 80%;
+    
+    & .eduright {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        & .title{
+            font-size: 1.2em;
+        }
+    }
+
+    & .eduleft {
+        background-color: #374151;
+        padding: 20px;
+        border-radius: 10px;
+
+        & div {
+            max-width: 300px;
+
+            & img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

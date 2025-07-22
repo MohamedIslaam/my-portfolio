@@ -1,0 +1,42 @@
+.skillcont {
+    background-color: #161616;
+    padding: 50px 10%;
+}
+
+.skillcont .title {
+    color: #70FE00;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.skillcont .skilllist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+
+    & .skillitm {
+        padding: 10px;
+        background-color: #2B2B2B;
+        display: flex;
+        width: 100px;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & div {
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    & p {
+        color: white;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
