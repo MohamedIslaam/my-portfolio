@@ -5,10 +5,11 @@ import './ContactMe.css';
 function ContactMe() {
   const form = useRef();
   const [status, setStatus] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm(
         'service_5tmiwwa',     
@@ -18,13 +19,13 @@ function ContactMe() {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setStatus('Message sent successfully!');
+          setLoading(false);
           e.target.reset();
         },
         (error) => {
-          console.log(error.text);
           setStatus('Failed to send message. Please try again.');
+          setLoading(false);
         }
       );
   };
@@ -54,7 +55,7 @@ function ContactMe() {
             required
             rows="5"
           ></textarea>
-          <button type="submit">Send</button>
+          <button type="submit">{loading?"sending...":"send"}</button>
         </form>
         {status && <p style={{ marginTop: '15px', color: '#70FE00' }}>{status}</p>}
       </div>
