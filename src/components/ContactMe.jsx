@@ -11,10 +11,10 @@ function ContactMe() {
 
     emailjs
       .sendForm(
-        'service_5tmiwwa',      // Replace with your EmailJS Service ID
-        'template_iide53q',     // Replace with your EmailJS Template ID
+        'service_5tmiwwa',     
+        'template_iide53q',    
         form.current,
-        'ipNNjRgMz2xI-RX1n'          // Replace with your EmailJS User ID (public key)
+        'ipNNjRgMz2xI-RX1n'    
       )
       .then(
         (result) => {
