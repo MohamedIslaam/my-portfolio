@@ -19,8 +19,9 @@ function ContactMe() {
       )
       .then(
         (result) => {
-          setStatus('Message sent successfully!');
           setLoading(false);
+          setStatus('Message sent successfully!');
+          setTimeout(setStatus(''),2000)
           e.target.reset();
         },
         (error) => {
